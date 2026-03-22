@@ -16,6 +16,12 @@
       --surface: #111111;
       --glass: rgba(255,255,255,0.04);
       --glass-border: rgba(255,255,255,0.08);
+      --text-primary: #EEEEF2;
+      --text-secondary: #A0A0B8;
+      --text-muted: #6B6B8A;
+      --card-bg: #111111;
+      --section-alt: #0d0d0d;
+      --nav-scrolled: rgba(10,10,10,0.85);
     }
 
     html { scroll-behavior: smooth; }
@@ -23,7 +29,7 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: var(--bg);
-      color: #E5E5E5;
+      color: var(--text-primary);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
@@ -42,7 +48,7 @@
       background: transparent;
     }
     .site-nav.scrolled {
-      background: rgba(10,10,10,0.85);
+      background: var(--nav-scrolled);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--glass-border);
@@ -332,16 +338,16 @@
   <div class="stats-bar">
     <div class="stats-inner">
       <div>
-        <div class="stat-number">10+</div>
-        <div class="stat-label">Years Experience</div>
+        <div class="stat-number">Serving</div>
+        <div class="stat-label"></div>
       </div>
       <div>
-        <div class="stat-number">2,000+</div>
-        <div class="stat-label">Happy Customers</div>
+        <div class="stat-number">4.9 ★</div>
+        <div class="stat-label">Google Rating</div>
       </div>
       <div>
-        <div class="stat-number">5.0</div>
-        <div class="stat-label">★ Star Rating</div>
+        <div class="stat-number">Local</div>
+        <div class="stat-label">Community Business</div>
       </div>
     </div>
   </div>
@@ -398,11 +404,6 @@
     <div class="card-grid">
             <div class="glass-card">
               <div class="text-accent mb-3 tracking-widest">★★★★★</div>
-              <p class="text-gray-300 italic mb-4">"Best in town, no question. We tell everyone about this place."</p>
-              <p class="text-white font-semibold text-sm">— Sarah L.</p>
-            </div>
-            <div class="glass-card">
-              <div class="text-accent mb-3 tracking-widest">★★★★★</div>
               <p class="text-gray-300 italic mb-4">"Incredible service. Professional, friendly, and the results speak for themselves."</p>
               <p class="text-white font-semibold text-sm">— Michael R.</p>
             </div>
@@ -410,6 +411,11 @@
               <div class="text-accent mb-3 tracking-widest">★★★★★</div>
               <p class="text-gray-300 italic mb-4">"Five stars isn't enough. They went above and beyond for us."</p>
               <p class="text-white font-semibold text-sm">— Jennifer K.</p>
+            </div>
+            <div class="glass-card">
+              <div class="text-accent mb-3 tracking-widest">★★★★★</div>
+              <p class="text-gray-300 italic mb-4">"Best in town, no question. We tell everyone about this place."</p>
+              <p class="text-white font-semibold text-sm">— Sarah L.</p>
             </div>
     </div>
   </section>
